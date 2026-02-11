@@ -1,0 +1,17 @@
+.commentsSection {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.commentInputCard {
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.commentInputBox {
+    width: 100%;
+}
+
+.commentsList {
+    width: 100%;
+}

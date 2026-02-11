@@ -1,0 +1,32 @@
+.commentNode {
+    margin-top: 12px;
+}
+
+.commentCard {
+    border-radius: 14px;
+}
+
+.commentContent {
+    width: 100%;
+}
+
+.commentTime {
+    font-size: 12px;
+}
+
+.commentText {
+    display: block;
+    margin-top: 6px;
+}
+
+.commentActions {
+    margin-top: 10px;
+}
+
+.commentDivider {
+    margin: 12px 0;
+}
+
+.replyBox {
+    width: 100%;
+}
