@@ -9,12 +9,10 @@ const { Title } = Typography;
 const { TextArea } = Input;
 
 const CommentsSection = () => {
-    const { comments, addComment } = useEditor();
+    const { rootIds, addComment } = useEditor();
 
     const [userName, setUserName] = useState("");
     const [commentText, setCommentText] = useState("");
-
-    const mainComments = comments.filter((c) => c.parentId === null);
 
     const handleAddComment = () => {
         if (!userName.trim()) return;
@@ -28,10 +26,10 @@ const CommentsSection = () => {
 
     return (
         <div className="commentsSection">
-            <Title level={3}>Try Commenting..</Title>
+            <Title level={3}>Comments</Title>
 
             <Card className="commentInputCard">
-                <Space direction="vertical" className="commentInputBox">
+                <Space direction="vertical" className="commentInputSpace">
                     <Input
                         value={userName}
                         onChange={(e) => setUserName(e.target.value)}
@@ -51,11 +49,9 @@ const CommentsSection = () => {
                 </Space>
             </Card>
 
-            <div className="commentsList">
-                {mainComments.map((comment) => (
-                    <CommentNode key={comment.id} comment={comment} />
-                ))}
-            </div>
+            {rootIds.map((id) => (
+                <CommentNode key={id} commentId={id} />
+            ))}
         </div>
     );
 };
