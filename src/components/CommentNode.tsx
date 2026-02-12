@@ -22,7 +22,7 @@ import {
 
 import { useEditor } from "../context/EditorContex";
 
-import "./commentNode.css";
+import "./CommentNode.css";
 
 const { Text } = Typography;
 const { TextArea } = Input;
