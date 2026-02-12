@@ -1,12 +1,8 @@
-.commentNode {
-    margin-top: 12px;
-}
-
 .commentCard {
-    border-radius: 14px;
+    border-radius: 14px !important;
 }
 
-.commentContent {
+.commentBody {
     width: 100%;
 }
 
@@ -23,10 +19,19 @@
     margin-top: 10px;
 }
 
-.commentDivider {
-    margin: 12px 0;
+.editBox {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.replyDivider {
+    margin: 12px 0 !important;
 }
 
 .replyBox {
     width: 100%;
+}
+
+.repliesContainer {
+    margin-top: 12px;
 }
